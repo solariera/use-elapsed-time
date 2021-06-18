@@ -1,7 +1,7 @@
 {
-  "name": "@solariera/template-npm-package",
+  "name": "@solariera/use-elapsed-time",
   "version": "0.0.1",
-  "description": "This is npm package template",
+  "description": "React hook to count elapsed time",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -14,14 +14,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solariera/template-npm-package.git"
+    "url": "git+https://github.com/solariera/use-elapsed-time.git"
   },
   "author": "Solariera <always@solariera.com> (https://github.com/solariera)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/solariera/template-npm-package/issues"
+    "url": "https://github.com/solariera/use-elapsed-time/issues"
   },
-  "homepage": "https://github.com/solariera/template-npm-package#readme",
+  "homepage": "https://github.com/solariera/use-elapsed-time#readme",
   "dependencies": {
     "react": "^17.0.2",
     "@babel/runtime": "^7.14.5"
