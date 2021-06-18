@@ -1,0 +1,35 @@
+env:
+  root: true
+extends:
+  - '@react-native-community'
+  - 'eslint-config-prettier'
+parser: '@typescript-eslint/parser'
+plugins:
+  - '@typescript-eslint'
+settings:
+  import/resolver:
+    node:
+      extensions:
+        - '.js'
+        - '.jsx'
+        - '.ts'
+        - '.tsx'
+        - '.json'
+        - '.yml'
+rules:
+  '@typescript-eslint/explicit-module-boundary-types': 'off'
+  '@typescript-eslint/indent':
+    - error
+    - 2
+  '@typescript-eslint/prefer-interface': 'off'
+  react/jsx-filename-extension:
+    - error
+    - extensions:
+        - '.jsx'
+        - '.tsx'
+  react/prop-types: 'off'
+  spaced-comment:
+    - error
+    - always
+    - markers:
+        - '/ <reference'

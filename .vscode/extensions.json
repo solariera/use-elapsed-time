@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "jpoissonnier.vscode-styled-components",
+    "gruntfuggly.todo-tree"
+  ],
+  "unwantedRecommendations": []
+}
