@@ -1,20 +1,32 @@
 {
-  "name": "@solariera/use-elapsed-time",
+  "name": "use-elapsed-time",
   "version": "0.0.1",
+  "private": false,
   "description": "React hook to count elapsed time",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "keywords": [
-    "template",
-    "npm",
-    "package"
+    "react",
+    "hook",
+    "elapsed",
+    "time"
   ],
+  "scripts": {
+    "clean": "rimraf dist && mkdirp dist",
+    "typesync": "typesync || :",
+    "build": "npm run clean && tsc",
+    "prepare": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/solariera/use-elapsed-time.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "Solariera <always@solariera.com> (https://github.com/solariera)",
   "license": "MIT",
@@ -23,10 +35,13 @@
   },
   "homepage": "https://github.com/solariera/use-elapsed-time#readme",
   "dependencies": {
-    "react": "^17.0.2",
-    "@babel/runtime": "^7.14.5"
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
   },
   "devDependencies": {
+    "@babel/runtime": "^7.14.5",
     "@babel/cli": "^7.14.5",
     "@babel/core": "^7.14.5",
     "@babel/plugin-proposal-async-generator-functions": "^7.14.5",
@@ -81,11 +96,5 @@
     "typesync": "^0.8.0",
     "mkdirp": "^1.0.4",
     "rimraf": "2.6.3"
-  },
-  "scripts": {
-    "clean": "rimraf dist && mkdirp dist",
-    "typesync": "typesync || :",
-    "build": "npm run clean && tsc",
-    "prepare": "npm run build"
   }
 }
