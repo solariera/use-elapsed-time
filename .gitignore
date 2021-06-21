@@ -1,6 +1,7 @@
 Podfile.lock
 dist/
 *.code-workspace
+yarn.lock
 
 # OSX
 #
